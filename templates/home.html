@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block content %}
+    <div class="card" style="width: 30rem;">
+      <img src="../static/image/flask-horizontal.webp" class="card-img-top" alt="Flask">
+      <div class="card-body">
+        <h5 class="card-title">Current Date and Time: {{ current_time }}</h5>
+        <p class="card-text">This site is built with the Flask and Bootstrap frameworks, Jinja templating engine</p>
+        <a href="https://flask.palletsprojects.com/en/3.0.x/" class="card-link">Flask</a>
+        <a href="https://bootstrap-4.ru/" class="card-link">Bootstrap</a>
+        <a href="https://jinja.palletsprojects.com/en/3.1.x/" class="card-link">Jinja</a>
+      </div>
+    </div>
+{% endblock %}
